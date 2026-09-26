@@ -1,23 +1,51 @@
 aid: armada1118
+
 name: Armada1118
-description: 'Armada1118 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Armada1118 is a stub entry created by the API Evangelist harvest process from secondary-market data. No public website, documentation, or API endpoints have been identified for this entity after exhaustive web searches. The record exists to allow future enrichment should verifiable information become available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/armada1118/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Technology
+- Data
+- Services
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/armada1118-hosts.yml
+- type: Vendors
+  url: vendors/armada1118-vendors.yml
+- type: DomainSecurity
+  url: security/armada1118-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/armada1118
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
